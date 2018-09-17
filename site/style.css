@@ -1000,6 +1000,7 @@ i.icon {
 --------------------------------------------------------------*/
 .entry-content p,
 .entry-content .sharedaddy,
+.entry-content .contact-form,
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -1143,6 +1144,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 	.entry-content p,
 	.entry-content .sharedaddy,
+	.entry-content .contact-form,
 	.entry-content h1,
 	.entry-content h2,
 	.entry-content h3,
