@@ -857,6 +857,12 @@ body:not(.title-tagline-hidden) .site-branding {
 	}	
 }
 
+#primary-sidebar section:not( :first-child ) {
+	border-top: dotted 1px #fff;
+	margin-top: 4em;
+	padding-top: 2em;
+}
+
 #primary-sidebar .social-networks {
 	width: 50%;
 	overflow: hidden;
@@ -878,20 +884,15 @@ body:not(.title-tagline-hidden) .site-branding {
 	border-radius: 50%;
 }
 
-svg:not( :root ) {
-	overflow: hidden;
+i.icon {
+	display: inline-block;
+    padding-top: 9px;
+    color: #23282d;
+    font-size: 200%;
 }
 
-svg.icon {
-	display: inline;
-	height: 40px;
-    width: 40px;
-    padding-top: 10px;
-    fill: #23282d;
-}
-
-#primary-sidebar .social-networks a:hover svg.icon {
-	fill: #c20041;
+#primary-sidebar .social-networks a:hover i.icon {
+	color: #c20041;
 }
 
 #footer-widgets {
