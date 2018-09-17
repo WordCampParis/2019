@@ -828,6 +828,35 @@ body:not(.title-tagline-hidden) .site-branding {
 	display: block;
 }
 
+.jetpack_subscription_widget #subscribe-email,
+.jetpack_subscription_widget #subscribe-submit {
+    display: inline-block;
+    width: 12.5rem;
+    margin: .25rem;
+	vertical-align: top;
+}
+
+.jetpack_subscription_widget #subscribe-email input {
+	width: 100%;
+}
+
+.jetpack_subscription_widget input[type=submit] {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #c20041;
+    padding: .4375rem 1rem;
+    border-color: transparent;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+@media (min-width: 37.5em) {
+	.jetpack_subscription_widget #subscribe-email {
+		width: 25rem;
+	}	
+}
+
 #primary-sidebar .social-networks {
 	width: 50%;
 	overflow: hidden;

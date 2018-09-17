@@ -1,4 +1,4 @@
-# Charte des WordCamp
+# Charte des WordCamps
 
 Les organisateurs, les orateurs, les sponsors et les volontaires qui contribuent au WordCamp de Paris s'engagent à respecter [la charte](https://make.wordpress.org/community/handbook/wordcamp-organizer/first-steps/helpful-documents-and-templates/agreement-among-wordcamp-organizers-speakers-sponsors-and-volunteers/) mise en place par WordCamp Community Support, l’organisme qui s’assure que cet évènement communautaire se déroule dans les meilleures conditions pour toutes et tous.
 
