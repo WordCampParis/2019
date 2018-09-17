@@ -605,7 +605,7 @@ body .site-title a {
 }
 
 body .site-title a {
-	background-image: url( https://paris.wordcamp.git/wp-content/uploads/2018/09/logo-header.png );
+	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/header-logo.png );
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: left top;
@@ -675,7 +675,7 @@ body:not(.title-tagline-hidden) .site-branding {
 	right: 0;
 	top: 0;
 	width: 100%;
-	background-image: url( https://paris.wordcamp.git/wp-content/uploads/2018/09/place-de-la-sorbonne-alt.jpg );
+	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/header-background.jpg );
 	background-position: center;
 	background-size: cover;
 }
@@ -942,7 +942,7 @@ svg.icon {
 	margin-bottom: 1.5rem;
 	color: #fff;
 	text-indent: -9999px;
-	background-image: url(https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png);
+	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/footer-logo.png );
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-color: #206fa8;
