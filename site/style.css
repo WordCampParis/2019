@@ -516,25 +516,6 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-
-/* Makes sure the fixed main navigation menu won't hide part of the text */
-:target:before {
-	z-index: 0;
-	content: "";
-	display: block;
-	height: 75px;
-	margin: -75px 0 0;
-	padding: 4em;
-}
-
-/* Do not show the outline on the skip link target. */
-#primary[tabindex="-1"]:focus {
-	outline: 0;
-}
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
@@ -808,8 +789,7 @@ body:not(.title-tagline-hidden) .site-branding {
 }
 
 #primary-sidebar {
-	background: #206fa8;
-	color: #fff;
+	border-top: solid 1px #c20041;
 	padding: 1em 0;
 }
 
@@ -826,6 +806,10 @@ body:not(.title-tagline-hidden) .site-branding {
 	clear: both;
 	content: "";
 	display: block;
+}
+
+#primary-sidebar h2 {
+	color: #206fa8;
 }
 
 .jetpack_subscription_widget #subscribe-email,
@@ -849,6 +833,10 @@ body:not(.title-tagline-hidden) .site-branding {
     border-color: transparent;
     font-weight: 700;
     padding: 0.5em;
+}
+
+.jetpack_subscription_widget input[type=submit]:hover {
+	background-color: #206fa8;
 }
 
 @media (min-width: 37.5em) {
@@ -887,12 +875,12 @@ body:not(.title-tagline-hidden) .site-branding {
 i.icon {
 	display: inline-block;
     padding-top: 9px;
-    color: #23282d;
+    color: #c20041;
     font-size: 200%;
 }
 
 #primary-sidebar .social-networks a:hover i.icon {
-	color: #c20041;
+	color: #206fa8;
 }
 
 #footer-widgets {
