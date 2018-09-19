@@ -437,7 +437,7 @@ a:hover, a:active {
 		display: block;
 	}
 
-	#primary-menu {
+	.menu-principal-container {
 		max-width: 1000px;
 		padding-left: 3em;
 		padding-right: 3em;
@@ -445,7 +445,7 @@ a:hover, a:active {
 		margin-right: auto;
 	}
 
-	#primary-menu after {
+	.menu-principal-container after {
 		clear: both;
 		content: "";
 		display: block;
