@@ -1302,6 +1302,10 @@ body.archive .page-header {
 	display: block;
 }
 
+body.home.page .entry-header {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
