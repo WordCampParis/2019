@@ -609,7 +609,6 @@ body .site-title a {
 	font-style: italic;
 }
 
-body.front-page:not(.title-tagline-hidden) .site-branding .site-title a,
 body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 	background-position: bottom center;
 	min-height: 300px;
@@ -619,14 +618,12 @@ body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 	max-width: inherit;
 }
 
-.front-page .site-branding,
-.home.blog .site-branding {
+.home .site-branding {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 	bottom: 5%;
 }
 
-.front-page .site-branding .site-description,
-.home.blog .site-branding .site-description {
+.home .site-branding .site-description {
 	display: inline-block;
 	max-width: 450px;
 }
@@ -640,8 +637,7 @@ body:not(.title-tagline-hidden) .site-branding {
 	position: relative;
 }
 
-.front-page .custom-header,
-.home.blog .custom-header {
+.home .custom-header {
 	display: table;
 	height: 300px;
 	height: 75vh;
@@ -677,10 +673,7 @@ body:not(.title-tagline-hidden) .site-branding {
 	z-index: 2;
 }
 
-/* Hides div in Customizer preview when header images or videos change. */
-
-.front-page .site-branding,
-.home.blog .site-branding {
+.home .site-branding {
 	display: table-cell;
 	height: 100%;
 	vertical-align: bottom;
@@ -701,9 +694,8 @@ body:not(.title-tagline-hidden) .site-branding {
 	body .site-title a {
 		padding-top: 10px;
 	}
-
-	.front-page .site-branding,
-	.home.blog .site-branding {
+	
+	.home .site-branding {
 		display: block;
 		left: 0;
 		height: auto;
@@ -712,18 +704,15 @@ body:not(.title-tagline-hidden) .site-branding {
 		margin-bottom: 70px
 	}
 
-	.front-page .custom-header,
-	.home.blog .custom-header {
+	.home .custom-header {
 		display: block;
 	}
 
-	.front-page .custom-header,
-	.home.blog .custom-header {
+	.home .custom-header {
 		height: calc(100vh - 58px);
 	}
 
-	.front-page.admin-bar .custom-header,
-	.home.blog.admin-bar .custom-header {
+	.home.admin-bar .custom-header {
 		height: calc(100vh - 90px);
 	}
 
@@ -732,13 +721,12 @@ body:not(.title-tagline-hidden) .site-branding {
 		position: relative;
 	}
 
-	.front-page .custom-header-media,
-	.home.blog .custom-header-media {
+	.home .custom-header-media {
 		height: 100%;
 		position: relative;
 	}
 
-	.body:not(.front-page):not(.home) .custom-header-media {
+	.body:not(.home) .custom-header-media {
 		bottom: 0;
 		height: auto;
 		left: 0;
@@ -761,21 +749,18 @@ body:not(.title-tagline-hidden) .site-branding {
 		font-size: 1rem;
 	}
 
-	.front-page .custom-header-media,
-	.home.blog .custom-header-media {
+	.home .custom-header-media {
 		height: 1200px;
 		height: 100vh;
 		max-height: 100%;
 		overflow: hidden;
 	}
 
-	.front-page .custom-header-media:before,
-	.home.blog .custom-header-media:before {
+	.home .custom-header-media:before {
 		height: 33%;
 	}
 
-	.admin-bar.front-page .custom-header-media,
-	.admin-bar.home.blog .custom-header-media {
+	.admin-bar.home .custom-header-media {
 		height: calc(100vh - 32px);
 	}
 }
