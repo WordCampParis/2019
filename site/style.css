@@ -701,7 +701,7 @@ body:not(.title-tagline-hidden) .site-branding {
 		height: auto;
 		padding-top: 0;
 		width: 100%;
-		margin-bottom: 70px
+		margin-bottom: 10px;
 	}
 
 	.home .custom-header {
@@ -982,6 +982,7 @@ i.icon {
 .wp-block-gallery,
 .wp-block-video,
 .wp-block-quote,
+.wp-block-quote.is-style-large,
 .wp-block-cover-text,
 .wp-block-button,
 .wp-block-gallery,
@@ -1012,7 +1013,7 @@ i.icon {
 	list-style-position: outside;
 }
 
-.wp-block-quote:not(.is-large) {
+.wp-block-quote:not(.is-style-large) {
 	border-left: 4px solid #000;
 	padding-left: 1em;
 	color: #767676;
@@ -1126,6 +1127,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	.wp-block-gallery,
 	.wp-block-video,
 	.wp-block-quote,
+	.wp-block-quote.is-style-large,
 	.wp-block-cover-text,
 	.wp-block-button,
 	.wp-block-gallery,
