@@ -628,11 +628,6 @@ body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 	max-width: 450px;
 }
 
-body:not(.title-tagline-hidden) .site-branding {
-	display: inline-block;
-	vertical-align: middle;
-}
-
 .custom-header {
 	position: relative;
 }
@@ -691,10 +686,15 @@ body:not(.title-tagline-hidden) .site-branding {
 		width: 100%;
 	}
 
+	body:not(.title-tagline-hidden) .site-branding {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
 	body .site-title a {
 		padding-top: 10px;
 	}
-	
+
 	.home .site-branding {
 		display: block;
 		left: 0;
@@ -827,7 +827,7 @@ body:not(.title-tagline-hidden) .site-branding {
 @media (min-width: 37.5em) {
 	.jetpack_subscription_widget #subscribe-email {
 		width: 25rem;
-	}	
+	}
 }
 
 #primary-sidebar section:not( :first-child ) {
