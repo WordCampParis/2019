@@ -1158,7 +1158,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 /* Fix missing background */
-body.post-slug-cap-sur-le-wordcamp-paris-2019 .wp-block-cover-image {
+article#post-3 .wp-block-cover-image {
 	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/cloture-2018-cc-by-oliviergobet.jpg );
 	background-position: 35%;
 }
@@ -1176,7 +1176,7 @@ body.post-slug-cap-sur-le-wordcamp-paris-2019 .wp-block-cover-image {
 		background-attachment: initial;
 	}
 
-	body.post-slug-cap-sur-le-wordcamp-paris-2019 .wp-block-cover-image {
+	article#post-3 .wp-block-cover-image {
 		background-position: 20%;
 	}
 }
