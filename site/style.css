@@ -790,7 +790,7 @@ body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 }
 
 #primary-sidebar h2 {
-	color: #206fa8;
+	color: #0073aa;
 }
 
 .jetpack_subscription_widget #subscribe-email,
@@ -817,7 +817,7 @@ body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 }
 
 .jetpack_subscription_widget input[type=submit]:hover {
-	background-color: #206fa8;
+	background-color: #0073aa;
 }
 
 @media (min-width: 37.5em) {
@@ -861,7 +861,7 @@ i.icon {
 }
 
 #primary-sidebar .social-networks a:hover i.icon {
-	color: #206fa8;
+	color: #0073aa;
 }
 
 #footer-widgets {
@@ -944,7 +944,7 @@ i.icon {
 	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/footer-logo.png );
 	background-position: 50%;
 	background-repeat: no-repeat;
-	background-color: #206fa8;
+	background-color: #0073aa;
 	background-size: 40px;
 	border-radius: 50%;
 	transition: all .1s ease;
@@ -959,7 +959,7 @@ i.icon {
 	margin-bottom: -1.875rem;
 	width: 1.875rem;
 	height: 4.25rem;
-	background: #206fa8;
+	background: #0073aa;
 	transition: all .1s ease;
 	content: "";
 }
