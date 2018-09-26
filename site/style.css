@@ -1157,10 +1157,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	}
 }
 
-/* Fix missing background */
+/**
+ * Fix missing background
+ *
+ * The background-image css property is not allowed for
+ * users without the unfitlered_html cap (eg Site Admins on Multisite configs).
+ */
 article#post-3 .wp-block-cover-image {
-	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/cloture-2018-cc-by-oliviergobet.jpg );
-	background-position: 35%;
+	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/wordcamp-2018-groupe.jpg );
 }
 
 @media screen and (max-width: 768px) {
@@ -1174,10 +1178,6 @@ article#post-3 .wp-block-cover-image {
 
 	.wp-block-cover-image.has-parallax {
 		background-attachment: initial;
-	}
-
-	article#post-3 .wp-block-cover-image {
-		background-position: 20%;
 	}
 }
 
