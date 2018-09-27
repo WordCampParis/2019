@@ -1292,6 +1292,7 @@ body.archive .page-header {
 	border-left: solid 4px #23282d;
 }
 
+header.page-header > *,
 .entry-header,
 .entry-footer {
 	margin-left: auto;
@@ -1301,11 +1302,20 @@ body.archive .page-header {
 	padding-right: 2em;
 }
 
+header.page-header > *:after,
 .entry-header:after,
 .entry-footer:after {
 	clear: both;
 	content: "";
 	display: block;
+}
+
+header.page-header h1 {
+	padding: 0 1em;
+}
+
+header .archive-description {
+	margin-bottom: 1.5em;
 }
 
 body.home.page .entry-header {
