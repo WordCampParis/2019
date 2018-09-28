@@ -1250,10 +1250,6 @@ body.archive .page-header {
 	text-underline-position: under;
 }
 
-.entry-content a.more-link:after {
-	content: " →";
-}
-
 @media screen and (min-width: 37.5em) {
 	.entry-content a.more-link {
 		max-width: 740px;
