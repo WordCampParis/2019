@@ -475,6 +475,28 @@ a:hover, a:active {
 	.main-navigation #primary-menu li.last {
 		float: right;
 	}
+
+	.main-navigation #primary-menu li.tickets a {
+		color: #c20041;
+	}
+	
+	.main-navigation #primary-menu li.tickets a:before {
+		display: inline-block;
+		margin: 0 5px 0 -10px;
+		width: auto;
+		height: auto;
+		line-height: normal;
+		vertical-align: baseline;
+		background-image: none;
+		background-position: 0 0;
+		background-repeat: repeat;
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: inherit;
+		-webkit-font-smoothing: antialiased;
+		content: "\f145";
+	}
 }
 
 .site-main .comment-navigation,
@@ -1463,4 +1485,68 @@ p.comment-awaiting-moderation {
 
 .required {
 	color: #c20041;
+}
+
+/*--------------------------------------------------------------
+# Camptix
+--------------------------------------------------------------*/
+
+#tix,
+body.admin-bar #tix {
+	margin: 1.5em auto;
+	max-width: 800px;
+	padding: 0 2em;
+}
+
+#tix table thead tr {
+	border-bottom: solid 1px #c20041;
+}
+
+#tix table:not( .tix-attendee-form ) tbody td {
+	padding: 1.5em 0;
+}
+
+#tix table th {
+	text-align: left;
+	padding-bottom: .8em;
+}
+
+#tix .tix-column-price,
+#tix .tix-column-remaining,
+#tix .tix-column-quantity,
+#tix .tix-row-total {
+	text-align: right;
+}
+
+#tix .tix-row-total td:first-child:before {
+	content: "Total";
+}
+
+.tix-attendee-form td,
+.tix-attendee-form td.tix-left,
+.tix-attendee-form td.tix-right {
+	display: block;
+	width: 100%;
+}
+
+.tix-attendee-form td.tix-left {
+	padding-top: 1.5em;
+}
+
+.tix-attendee-form td.tix-right br {
+	display: none;
+}
+
+.tix-attendee-form td.tix-right {
+	padding-top: .5em;
+}
+
+.tix-attendee-form td.tix-right label {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.tix-attendee-form input[type="text"],
+.tix-attendee-form input[type="email"] {
+	width: 98%;
 }
