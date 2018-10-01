@@ -472,9 +472,8 @@ a:hover, a:active {
 		padding: 1em 1.25em;
 	}
 
-	.main-navigation .nav-menu li.last {
+	.main-navigation #primary-menu li.last {
 		float: right;
-		display: none;
 	}
 }
 
