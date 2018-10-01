@@ -1248,21 +1248,12 @@ body.archive .page-header {
 	box-shadow: none!important;
 	text-decoration: underline;
 	text-underline-position: under;
+	visibility: hidden;
 }
 
-.more-link span.screen-reader-text {
-	clip: auto;
-	clip-path: none;
-	height: auto;
-	margin: auto;
-	overflow: visible;
-	width: auto;
-	position: relative !important;
-	font-style: italic;
-}
-
-.more-link span.screen-reader-text .emoji {
-	display: none !important;
+.entry-content a.more-link:before {
+	visibility: visible;
+	content: "Poursuivre la lecture →";
 }
 
 @media screen and (min-width: 37.5em) {
