@@ -1250,6 +1250,21 @@ body.archive .page-header {
 	text-underline-position: under;
 }
 
+.more-link span.screen-reader-text {
+	clip: auto;
+	clip-path: none;
+	height: auto;
+	margin: auto;
+	overflow: visible;
+	width: auto;
+	position: relative !important;
+	font-style: italic;
+}
+
+.more-link span.screen-reader-text .emoji {
+	display: none !important;
+}
+
 @media screen and (min-width: 37.5em) {
 	.entry-content a.more-link {
 		max-width: 740px;
