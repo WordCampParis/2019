@@ -1388,10 +1388,13 @@ ol.comment-list li{
 	z-index: 2;
 }
 
+img.avatar {
+    border-radius: 50%;
+}
+
 .comment-author .avatar {
 	height: 32px;
 	width: 32px;
-	border-radius: 50%;
 	vertical-align: middle;
 }
 
@@ -1485,6 +1488,36 @@ p.comment-awaiting-moderation {
 
 .required {
 	color: #c20041;
+}
+
+/*--------------------------------------------------------------
+# WordCamp Post Types
+--------------------------------------------------------------*/
+
+.wcorg-organizers {
+    position: relative;
+	margin: 1.5em auto;
+	max-width: 740px;
+	border-bottom: solid 1px #c20041;
+}
+
+[class~='wcorg-organizers']:last-of-type {
+    border-bottom: none;
+}
+
+.wcorg-organizer:nth-child(n+2) {
+	border-top: dotted 1px #0073aa;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+
+.wcorg-organizer h2 {
+    position: absolute;
+    width: 100%;
+    margin-left: 120px;
+    line-height: 100px;
+    margin-top: 0;
+    color: #0073aa;
 }
 
 /*--------------------------------------------------------------
