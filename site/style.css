@@ -357,7 +357,8 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-.menu-toggle {
+.menu-toggle,
+.menu-toggle:hover {
 	background-color: transparent;
 	border: 0;
 	-webkit-box-shadow: none;
@@ -1122,6 +1123,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .wp-block-table td, .wp-block-table th {
 	padding: .5em;
+	border: 1px solid currentColor;
+}
+
+.wp-block-embed.aligncenter twitterwidget {
+	margin: 0 auto;
+	max-width: 100% !important;
 }
 
 .entry-content li {
