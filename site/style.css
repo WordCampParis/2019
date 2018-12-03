@@ -1531,6 +1531,24 @@ p.comment-awaiting-moderation {
     color: #0073aa;
 }
 
+@media screen and (max-width: 768px) {
+	.page-slug-organisateur-rice-s .entry-content > h2 {
+		text-align: center;
+	}
+
+	.wcorg-organizer h2 {
+		margin-left: 0;
+		margin-top: 75px;
+		text-align: center;
+	}
+
+	.wcorg-organizer-description img.avatar {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+}
+
 /*--------------------------------------------------------------
 # Camptix
 --------------------------------------------------------------*/
