@@ -480,7 +480,7 @@ a:hover, a:active {
 	.main-navigation #primary-menu li.tickets a {
 		color: #c20041;
 	}
-	
+
 	.main-navigation #primary-menu li.tickets a:before {
 		display: inline-block;
 		margin: 0 5px 0 -10px;
@@ -1226,6 +1226,10 @@ article#post-3 .wp-block-cover-image {
 	right: 0;
 }
 
+.wp-block-embed.aligncenter iframe {
+	margin: 0 auto !important;
+}
+
 /*--------------------------------------------------------------
 ## Archive Loops
 --------------------------------------------------------------*/
@@ -1634,4 +1638,16 @@ body.admin-bar #tix {
 	border: none;
 	border-width: 0;
 	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Jetpack
+--------------------------------------------------------------*/
+
+.jetpack-video-wrapper .youtube-player {
+	margin: 0 auto !important;
+}
+
+.wcorg-organizers .jetpack-likes-widget-wrapper {
+	display: none;
 }
