@@ -1234,6 +1234,25 @@ article#post-3 .wp-block-cover-image {
 	margin: 0 auto !important;
 }
 
+.wp-block-table.sponsors-2019 tr td {
+	width: 10%;
+	text-align: center;
+}
+
+.wp-block-table.sponsors-2019 tr:first-child td {
+	font-weight: 900;
+}
+
+.wp-block-table.sponsors-2019 tr:first-child td:first-child,
+.wp-block-table.sponsors-2019 tr:last-child td:first-child {
+	border: none;
+}
+
+.wp-block-table.sponsors-2019 tr td:first-child {
+	width: 50%;
+	text-align: left;
+}
+
 /*--------------------------------------------------------------
 ## Archive Loops
 --------------------------------------------------------------*/
