@@ -1692,3 +1692,9 @@ body.admin-bar #tix {
 .wcorg-organizers .jetpack-likes-widget-wrapper {
 	display: none;
 }
+
+#post-4 .contact-form input[type="text"],
+#post-4 .contact-form input[type="email"],
+#post-4 .contact-form textarea {
+	width: 100%;
+}
