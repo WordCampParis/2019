@@ -1135,6 +1135,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	list-style-position: outside;
 }
 
+.wp-block-button a, .wp-block-button a:visited {
+	color: #fff;
+}
+
 @media screen and (min-width: 768px) {
 	.wp-block-cover-text p {
 		padding: 1.5em 0;
