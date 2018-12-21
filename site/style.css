@@ -1636,6 +1636,10 @@ body.admin-bar #tix {
 	width: 98%;
 }
 
+.page-slug-billetterie .tix-column-description {
+	width: 65%;
+}
+
 .tix-payment-method {
 	overflow: hidden;
 	border: solid 1px #c20041;
