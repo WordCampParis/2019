@@ -1,0 +1,449 @@
+/* Feuille de style additionnelle pour le thème TWentyNineteen */
+
+/* Entête */
+
+.site-header.featured-image img.custom-logo {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.site-header.featured-image .custom-logo-link {
+	background: none;
+}
+
+/* Widgets */
+
+.widget-area .social-networks {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.widget-area .social-networks li {
+	display: inline-block;
+	margin: .5em;
+}
+
+.widget-area .social-networks a {
+	display: inline-block;
+	height: 50px;
+	text-align: center;
+	width: 50px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+i.icon {
+    display: inline-block;
+    padding-top: 9px;
+    font-size: 200%;
+}
+
+.widget-area #menu-pied-de-page {
+	padding-top: 3rem;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.widget-area #menu-pied-de-page li {
+	display: inline-block;
+	padding: 1em 0;
+	font-size: 70%;
+}
+
+.widget-area #menu-pied-de-page li:not( :last-child ):after {
+	content: " | ";
+}
+
+/* Pied de page */
+
+#colophon .site-info {
+	position: relative;
+	display: block;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	color: transparent;
+	background-image: url('https://2019.paris.wordcamp.org/files/2018/09/footer-logo.png');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-color: #0073aa;
+	background-size: 40px;
+	border-radius: 50%;
+	transition: all .1s ease;
+}
+
+#colophon .site-info:after {
+	position: absolute;
+	left: 50%;
+	top: 1.875rem;
+	z-index: -1;
+	margin-left: -.9375rem;
+	margin-bottom: -1.875rem;
+	width: 1.875rem;
+	height: 4.25rem;
+	background: #0073aa;
+	transition: all .1s ease;
+	content: "";
+}
+
+#colophon .site-info .site-name {
+	display: none;
+}
+
+#colophon .site-info a:hover {
+	color: transparent;
+}
+
+/* Embeds / JetPack */
+
+.wp-block-column.empty {
+	display: none;
+}
+
+.wp-block-embed.aligncenter iframe {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.wp-block-embed.aligncenter twitterwidget {
+	margin: 0 auto;
+	max-width: 100% !important;
+}
+
+.wp-block-embed.type-video > .wp-block-embed__wrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+}
+
+.wp-block-embed.type-video > .wp-block-embed__wrapper > iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.wp-block-embed.aligncenter iframe {
+	margin: 0 auto !important;
+}
+
+.jetpack-video-wrapper .youtube-player {
+	margin: 0 auto !important;
+}
+
+/* WordCamp Post Types */
+
+.wcorg-organizers .jetpack-likes-widget-wrapper {
+	display: none;
+}
+
+.wcorg-organizers {
+	position: relative;
+	margin: 1.5em auto;
+	max-width: 740px;
+	border-bottom: solid 1px #0073aa;
+	padding-bottom: 1em;
+}
+
+[class~='wcorg-organizers']:last-of-type {
+	border-bottom: none;
+}
+
+.wcorg-organizer:nth-child(n+2) {
+	border-top: dotted 1px #0073aa;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+
+.wcorg-organizer h2:before {
+	display: none;
+}
+
+.wcorg-organizer h2 {
+	position: absolute;
+	width: 100%;
+	margin-left: 120px;
+	line-height: 100px;
+	margin-top: 0;
+	color: #0073aa;
+}
+
+.page-slug-organisateur-rice-s .entry-content img.avatar {
+	height: 100px;
+	width: 100px;
+}
+
+.page-slug-organisateur-rice-s .entry-content > h2:before {
+	display: none;
+}
+
+.page-slug-organisateur-rice-s .entry-content > h2 {
+	font-size: 1.25em;
+}
+
+.wp-block-table.sponsors-2019 tr td {
+	width: 15%;
+	text-align: center;
+}
+
+.wp-block-table.sponsors-2019 tr:first-child td,
+.wp-block-table.sponsors-2019 tr:last-child td {
+	font-weight: 900;
+	font-size: 70%;
+}
+
+.wp-block-table.sponsors-2019 tr:first-child td:first-child,
+.wp-block-table.sponsors-2019 tr:last-child td:first-child {
+	border: none;
+}
+
+.wp-block-table.sponsors-2019 tr td:first-child {
+	width: 25%;
+	text-align: left;
+	font-size: 65%;
+	word-break: keep-all;
+}
+
+.post-slug-appel-a-sponsors .contact-form input[type="text"],
+.post-slug-appel-a-sponsors .contact-form input[type="email"],
+.post-slug-appel-a-sponsors .contact-form textarea {
+	width: 100%;
+}
+
+/* CampTix */
+
+#tix,
+body.admin-bar #tix {
+	margin: 1.5em auto;
+	max-width: 800px;
+	padding: 0 2em;
+}
+
+#tix table thead tr {
+	border-bottom: solid 1px #0073aa;
+}
+
+#tix table:not( .tix-attendee-form ) tbody td {
+	padding: 1.5em 0;
+}
+
+#tix table th {
+	text-align: left;
+	padding-bottom: .8em;
+}
+
+#tix .tix-column-price,
+#tix .tix-column-remaining,
+#tix .tix-column-quantity,
+#tix .tix-row-total {
+	text-align: right;
+}
+
+#tix .tix-row-total td:first-child:before {
+	content: "Total";
+}
+
+.tix-attendee-form td,
+.tix-attendee-form td.tix-left,
+.tix-attendee-form td.tix-right {
+	display: block;
+	width: 100%;
+	word-break: keep-all;
+}
+
+.tix-attendee-form td.tix-left {
+	padding-top: 1.5em;
+}
+
+.tix-attendee-form td.tix-right br {
+	display: none;
+}
+
+.tix-attendee-form td.tix-right {
+	padding-top: .5em;
+}
+
+.tix-attendee-form td.tix-right label {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.tix-attendee-form input[type="text"],
+.tix-attendee-form input[type="email"] {
+	width: 98%;
+}
+
+.page-slug-billetterie #tix, body.page-slug-billetterie.admin-bar #tix,
+.page-slug-billetterie table {
+	width: 100%;
+	max-width: 100%;
+}
+
+.page-slug-billetterie table.tix_tickets_table th, .page-slug-billetterie table.tix_tickets_table td {
+	border: none;
+}
+
+.page-slug-billetterie #tix, body.page-slug-billetterie.admin-bar #tix {
+	padding: 0;
+}
+
+.page-slug-billetterie .tix-column-description {
+	width: 60%;
+	word-break: keep-all;
+}
+
+.tix-payment-method {
+	overflow: hidden;
+	border: solid 1px #0073aa;
+	padding: 3px 3px 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.tix-payment-method label.tix-payment-tab:before,
+.tix-payment-method button.tix-payment-tab:after {
+	display: inline-block;
+	margin: 0 5px -10px;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	vertical-align: baseline;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	content: "\f09d";
+}
+
+.tix-payment-method button.tix-payment-tab:after {
+	content: "\f142";
+}
+
+.tix-payment-method .tix-payment-tab {
+	text-align: center;
+	border: none;
+}
+
+.tix-payment-method .tix-payment-tab {
+	line-height: 24px;
+}
+
+.tix-payment-method .tix-payment-tab.tix-tab-selected {
+	background-color: #0073aa;
+	border: none;
+	border-width: 0;
+	color: #fff;
+}
+
+label[for=tix-payment-method_paypal] {
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 110% !important;
+	vertical-align: top;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+	.page-slug-organisateur-rice-s .entry-content > h2 {
+		text-align: center;
+	}
+	
+	.wcorg-organizer h2 {
+		margin-left: 0;
+		margin-top: 75px;
+		text-align: center;
+	}
+	
+	.wcorg-organizer-description img.avatar {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.entry .entry-footer {
+		max-width: 100%;
+	}
+	
+	#colophon .site-info {
+		margin-top: 0;
+		text-align: center;
+	}
+	
+	.wp-block-video video {
+		max-width: 740px;
+	}
+	
+	.wp-block-columns.sponsors {
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.wp-block-columns.sponsors .wp-block-column {
+		padding-left: 1em;
+	}
+	
+	.wp-block-columns.sponsors .wp-block-column:last-child {
+		padding-right: 1em;
+	}
+}
+
+@media only screen and (min-width: 1168px) {
+    .entry .entry-content > *, .entry .entry-summary > *,
+    .entry .entry-content > .aligncenter,
+    #colophon .widget-column .widget {
+		width: 100%;
+        max-width: 100%;
+    }
+	
+    #colophon .widget-column .widget,
+    #colophon .widget-column .widget > div {
+        margin: 0 auto;
+    }
+	
+	.widget h2 {
+        text-align: center;
+    }
+	
+	.widget h2:before {
+		margin: 1rem auto;
+	}
+	
+	.widget-area .social-networks,
+		.widget > div,
+		.widget-area #menu-pied-de-page {
+		width: fit-content;
+	}
+	
+	.widget-area .social-networks li {
+		text-align: center;
+	}
+	
+	.post-navigation .nav-links,
+		.comments-area {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#footer-widgets #menu-pied-de-page {
+		padding: 1em 0;
+	}
+	
+	#footer-widgets #menu-pied-de-page li {
+		display: inline;
+	}
+}
