@@ -35,9 +35,9 @@
 }
 
 i.icon {
-    display: inline-block;
-    padding-top: 9px;
-    font-size: 200%;
+	display: inline-block;
+	padding-top: 9px;
+	font-size: 200%;
 }
 
 .widget-area #menu-pied-de-page {
@@ -402,21 +402,21 @@ label[for=tix-payment-method_paypal] {
 }
 
 @media only screen and (min-width: 1168px) {
-    .entry .entry-content > *, .entry .entry-summary > *,
-    .entry .entry-content > .aligncenter,
-    #colophon .widget-column .widget {
+	.entry .entry-content > *, .entry .entry-summary > *,
+	.entry .entry-content > .aligncenter,
+	#colophon .widget-column .widget {
 		width: 100%;
-        max-width: 100%;
-    }
+		max-width: 100%;
+	}
 	
-    #colophon .widget-column .widget,
-    #colophon .widget-column .widget > div {
-        margin: 0 auto;
-    }
+	#colophon .widget-column .widget,
+	#colophon .widget-column .widget > div {
+		margin: 0 auto;
+	}
 	
 	.widget h2 {
-        text-align: center;
-    }
+		text-align: center;
+	}
 	
 	.widget h2:before {
 		margin: 1rem auto;
@@ -439,11 +439,11 @@ label[for=tix-payment-method_paypal] {
 }
 
 @media screen and (max-width: 768px) {
-	#footer-widgets #menu-pied-de-page {
+	.widget-area #menu-pied-de-page {
 		padding: 1em 0;
 	}
 	
-	#footer-widgets #menu-pied-de-page li {
+	.widget-area #menu-pied-de-page li {
 		display: inline;
 	}
 }
