@@ -11,10 +11,10 @@
 	background: none;
 }
 
-#site-navigation ul > li:last-child a {
+#site-navigation li.highlighted a {
 	color: #222;
 }
-.site-header.featured-image #site-navigation ul > li:last-child a {
+.site-header.featured-image #site-navigation li.highlighted a {
 	color: #f3db31;
 }
 
@@ -104,6 +104,62 @@ i.icon {
 	color: transparent !important;
 }
 
+/* Colors */
+h2.platinum:before,
+h3.platinum:before,
+h4.platinum:before,
+h2.gold:before,
+h3.gold:before,
+h4.gold:before,
+h2.silver:before,
+h3.silver:before,
+h4.silver:before,
+h2.bronze:before,
+h3.bronze:before,
+h4.bronze:before {
+	display: none;
+}
+
+h2.platinum,
+h3.platinum,
+h4.platinum,
+h2.gold,
+h3.gold,
+h4.gold,
+h2.silver,
+h3.silver,
+h4.silver,
+h2.bronze,
+h3.bronze,
+h4.bronze {
+	padding-bottom: 1em;
+}
+
+h2.platinum,
+h3.platinum,
+h4.platinum {
+	border-bottom: solid 2px #e5e4E2;
+}
+
+h2.gold,
+h3.gold,
+h4.gold {
+	border-bottom: solid 2px #ffd700;
+}
+
+h2.silver,
+h3.silver,
+h4.silver {
+	border-bottom: solid 2px #c0c0c0;
+}
+
+h2.bronze,
+h3.bronze,
+h4.bronze {
+	padding-bottom: 1.5em;
+	border-bottom: solid 2px #cd7f32;
+}
+
 /* Blocks */
 .wp-block-media-text.is-round img {
 	width: 400px;
@@ -112,6 +168,12 @@ i.icon {
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
+}
+
+.wp-block-image figure.aligncenter {
+	width: auto !important;
+	margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* Embeds / JetPack */
@@ -156,6 +218,15 @@ i.icon {
 	margin: 0 auto !important;
 }
 
+.entry .entry-content .googlemaps iframe {
+	margin: 0 auto;
+	display: block;
+}
+
+.entry .entry-content .googlemaps {
+	padding-bottom: 1.5em;
+}
+
 /* WordCamp Post Types */
 
 .wcorg-organizers .jetpack-likes-widget-wrapper {
@@ -193,7 +264,7 @@ i.icon {
 	color: #0073aa;
 }
 
-.page-slug-organisateur-rice-s .entry-content img.avatar {
+.entry-content .wcorg-organizer-description img.avatar {
 	height: 100px;
 	width: 100px;
 }
@@ -396,6 +467,12 @@ label[for=tix-payment-method_paypal] {
 	.widget-area #menu-pied-de-page li {
 		display: inline;
 	}
+
+	.wp-block-media-text.is-round.is-stacked-on-mobile img {
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -415,6 +492,10 @@ label[for=tix-payment-method_paypal] {
 	.wp-block-columns.sponsors {
 		align-items: center;
 		justify-content: center;
+	}
+
+	.wp-block-columns.sponsors .wp-block-image figure {
+		width: auto !important;
 	}
 
 	.wp-block-columns.sponsors .wp-block-column {
