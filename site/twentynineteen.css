@@ -306,10 +306,28 @@ h4.bronze {
 	width: 100%;
 }
 
+body.single-wcb_sponsor #masthead.featured-image {
+	background: url('https://2019.paris.wordcamp.org/files/2018/12/goodies-wcparis-2018-cc-by-christophe-perrin.jpg');
+	background-size: cover;
+}
+
+body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail {
+	width: 100%;
+}
+
 body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
 	object-fit: scale-down;
 	filter: grayscale(0%);
 	z-index: 8;
+	height: inherit;
+	width: inherit;
+	max-height: 150px;
+	min-height: inherit;
+	min-width: inherit;
+	background-color: #FFF;
+	background-color: rgba(255,255,255,0.85);
+	top: 50%;
+	padding: 1em;
 }
 
 /* CampTix */
@@ -511,9 +529,13 @@ label[for=tix-payment-method_paypal] {
 	.wp-block-columns.sponsors .wp-block-column:last-child {
 		padding-right: 1em;
 	}
+
+	body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
+		top: 35%;
+	}
 }
 
-@media only screen and (min-width: 1168px) {
+@media only screen and (min-width: 1168px) and (max-width: 1400px) {
 	.entry .entry-content > *, .entry .entry-summary > *,
 	.entry .entry-content > .aligncenter,
 	#colophon .widget-column .widget {
