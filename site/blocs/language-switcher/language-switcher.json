@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "languageSwitcher",
+  "content": "<!-- wp:html -->\n<a id=\"fr\" class=\"fr-text\"></a>\n<a id=\"en\" class=\"en-text\"></a>\n<!-- /wp:html -->\n\n<!-- wp:list {\"className\":\"language-switcher\"} -->\n<ul class=\"language-switcher\"><li class=\"fr-tab\"><a href=\"#fr\">🇫🇷</a></li><li class=\"en-tab\"><a href=\"#en\">🇬🇧</a></li></ul>\n<!-- /wp:list -->"
+}
