@@ -1,0 +1,77 @@
+/* Translations */
+
+.wp-block-table.language,
+.language {
+	display: none;
+}
+
+.wp-block-table.default-language,
+.default-language {
+	display: block;
+}
+
+:target ~ .wp-block-table.default-language,
+:target ~ .default-language {
+	display: none;
+}
+
+#fr:target ~ .wp-block-table.fr-text,
+#en:target ~ .wp-block-table.en-text,
+#fr:target ~ .fr-text,
+#en:target ~ .en-text {
+  display: block;
+}
+
+#fr:target ~ .wp-block-table.en-text,
+#en:target ~ .wp-block-table.fr-text,
+#fr:target ~ .en-text,
+#en:target ~ .fr-text {
+  display: none;
+}
+
+ul.language-switcher {
+	width: 100%;
+	height: auto;
+	border-bottom: solid 1px #ddd;
+	padding: 0 !important;
+	margin-bottom: 1.5em !important;
+	text-align: right;
+	display: none;
+}
+
+body.singular ul.language-switcher {
+	display: block;
+}
+
+ul.language-switcher li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 !important;
+}
+
+ul.language-switcher li:last-child {
+	margin-right: 0.5em !important;
+}
+
+ul.language-switcher li a {
+	text-decoration: none !important;
+	box-shadow: none !important;
+	padding: 0.5em;
+	padding-bottom: 0.25em;
+	display: block;
+	margin-bottom: -1px;
+}
+
+ul.language-switcher li.fr-tab a {
+	border: solid 1px #ddd;
+	border-bottom-color: #fff;
+}
+
+#en:target ~ ul.language-switcher li.fr-tab a {
+	border: none;
+}
+
+#en:target ~ ul.language-switcher li.en-tab a {
+	border: solid 1px #ddd;
+	border-bottom-color: #fff;
+}

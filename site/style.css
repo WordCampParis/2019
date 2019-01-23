@@ -149,8 +149,8 @@ input[type="submit"] {
 	line-height: 1.428571429;
 	font-weight: normal;
 	color: #FFF;
-	background-color: #23282d;
-	border: 1px solid #23282d;
+	background-color: #c20041;
+	border: 1px solid #c20041;
 	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
 }
 
@@ -158,8 +158,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	color: #23282d;
-	background-color: #FFF;
+	color: #FFF;
+	background-color: #0073aa;
 }
 
 button:active, button:focus,
@@ -357,7 +357,8 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-.menu-toggle {
+.menu-toggle,
+.menu-toggle:hover {
 	background-color: transparent;
 	border: 0;
 	-webkit-box-shadow: none;
@@ -472,9 +473,30 @@ a:hover, a:active {
 		padding: 1em 1.25em;
 	}
 
-	.main-navigation .nav-menu li.last {
+	.main-navigation #primary-menu li.last {
 		float: right;
-		display: none;
+	}
+
+	.main-navigation #primary-menu li.tickets a {
+		color: #c20041;
+	}
+
+	.main-navigation #primary-menu li.tickets a:before {
+		display: inline-block;
+		margin: 0 5px 0 -10px;
+		width: auto;
+		height: auto;
+		line-height: normal;
+		vertical-align: baseline;
+		background-image: none;
+		background-position: 0 0;
+		background-repeat: repeat;
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: inherit;
+		-webkit-font-smoothing: antialiased;
+		content: "\f145";
 	}
 }
 
@@ -790,7 +812,7 @@ body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 }
 
 #primary-sidebar h2 {
-	color: #206fa8;
+	color: #0073aa;
 }
 
 .jetpack_subscription_widget #subscribe-email,
@@ -817,7 +839,7 @@ body.home:not(.title-tagline-hidden) .site-branding .site-title a {
 }
 
 .jetpack_subscription_widget input[type=submit]:hover {
-	background-color: #206fa8;
+	background-color: #0073aa;
 }
 
 @media (min-width: 37.5em) {
@@ -861,7 +883,7 @@ i.icon {
 }
 
 #primary-sidebar .social-networks a:hover i.icon {
-	color: #206fa8;
+	color: #0073aa;
 }
 
 #footer-widgets {
@@ -944,7 +966,7 @@ i.icon {
 	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/footer-logo.png );
 	background-position: 50%;
 	background-repeat: no-repeat;
-	background-color: #206fa8;
+	background-color: #0073aa;
 	background-size: 40px;
 	border-radius: 50%;
 	transition: all .1s ease;
@@ -959,7 +981,7 @@ i.icon {
 	margin-bottom: -1.875rem;
 	width: 1.875rem;
 	height: 4.25rem;
-	background: #206fa8;
+	background: #0073aa;
 	transition: all .1s ease;
 	content: "";
 }
@@ -1101,10 +1123,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .wp-block-table td, .wp-block-table th {
 	padding: .5em;
+	border: 1px solid currentColor;
+}
+
+.wp-block-embed.aligncenter twitterwidget {
+	margin: 0 auto;
+	max-width: 100% !important;
 }
 
 .entry-content li {
 	list-style-position: outside;
+}
+
+.wp-block-button a, .wp-block-button a:visited {
+	color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1157,10 +1189,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	}
 }
 
-/* Fix missing background */
+/**
+ * Fix missing background
+ *
+ * The background-image css property is not allowed for
+ * users without the unfitlered_html cap (eg Site Admins on Multisite configs).
+ */
 article#post-3 .wp-block-cover-image {
-	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/cloture-2018-cc-by-oliviergobet.jpg );
-	background-position: 35%;
+	background-image: url( https://2019.paris.wordcamp.org/files/2018/09/wordcamp-2018-groupe.jpg );
 }
 
 @media screen and (max-width: 768px) {
@@ -1174,10 +1210,6 @@ article#post-3 .wp-block-cover-image {
 
 	.wp-block-cover-image.has-parallax {
 		background-attachment: initial;
-	}
-
-	article#post-3 .wp-block-cover-image {
-		background-position: 20%;
 	}
 }
 
@@ -1196,6 +1228,29 @@ article#post-3 .wp-block-cover-image {
 	left: 0;
 	bottom: 0;
 	right: 0;
+}
+
+.wp-block-embed.aligncenter iframe {
+	margin: 0 auto !important;
+}
+
+.wp-block-table.sponsors-2019 tr td {
+	width: 10%;
+	text-align: center;
+}
+
+.wp-block-table.sponsors-2019 tr:first-child td {
+	font-weight: 900;
+}
+
+.wp-block-table.sponsors-2019 tr:first-child td:first-child,
+.wp-block-table.sponsors-2019 tr:last-child td:first-child {
+	border: none;
+}
+
+.wp-block-table.sponsors-2019 tr td:first-child {
+	width: 50%;
+	text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -1248,10 +1303,12 @@ body.archive .page-header {
 	box-shadow: none!important;
 	text-decoration: underline;
 	text-underline-position: under;
+	visibility: hidden;
 }
 
-.entry-content a.more-link:after {
-	content: " →";
+.entry-content a.more-link:before {
+	visibility: visible;
+	content: "Poursuivre la lecture →";
 }
 
 @media screen and (min-width: 37.5em) {
@@ -1292,6 +1349,7 @@ body.archive .page-header {
 	border-left: solid 4px #23282d;
 }
 
+header.page-header > *,
 .entry-header,
 .entry-footer {
 	margin-left: auto;
@@ -1301,11 +1359,24 @@ body.archive .page-header {
 	padding-right: 2em;
 }
 
+header.page-header > *:after,
 .entry-header:after,
 .entry-footer:after {
 	clear: both;
 	content: "";
 	display: block;
+}
+
+body.home .entry-footer {
+	display: none;
+}
+
+header.page-header h1 {
+	padding: 0 1em;
+}
+
+header .archive-description {
+	margin-bottom: 1.5em;
 }
 
 body.home.page .entry-header {
@@ -1351,10 +1422,13 @@ ol.comment-list li{
 	z-index: 2;
 }
 
+img.avatar {
+    border-radius: 50%;
+}
+
 .comment-author .avatar {
 	height: 32px;
 	width: 32px;
-	border-radius: 50%;
 	vertical-align: middle;
 }
 
@@ -1448,4 +1522,183 @@ p.comment-awaiting-moderation {
 
 .required {
 	color: #c20041;
+}
+
+/*--------------------------------------------------------------
+# WordCamp Post Types
+--------------------------------------------------------------*/
+
+.wcorg-organizers {
+    position: relative;
+	margin: 1.5em auto;
+	max-width: 740px;
+	border-bottom: solid 1px #c20041;
+}
+
+[class~='wcorg-organizers']:last-of-type {
+    border-bottom: none;
+}
+
+.wcorg-organizer:nth-child(n+2) {
+	border-top: dotted 1px #0073aa;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+
+.wcorg-organizer h2 {
+    position: absolute;
+    width: 100%;
+    margin-left: 120px;
+    line-height: 100px;
+    margin-top: 0;
+    color: #0073aa;
+}
+
+@media screen and (max-width: 768px) {
+	.page-slug-organisateur-rice-s .entry-content > h2 {
+		text-align: center;
+	}
+
+	.wcorg-organizer h2 {
+		margin-left: 0;
+		margin-top: 75px;
+		text-align: center;
+	}
+
+	.wcorg-organizer-description img.avatar {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Camptix
+--------------------------------------------------------------*/
+
+#tix,
+body.admin-bar #tix {
+	margin: 1.5em auto;
+	max-width: 800px;
+	padding: 0 2em;
+}
+
+#tix table thead tr {
+	border-bottom: solid 1px #c20041;
+}
+
+#tix table:not( .tix-attendee-form ) tbody td {
+	padding: 1.5em 0;
+}
+
+#tix table th {
+	text-align: left;
+	padding-bottom: .8em;
+}
+
+#tix .tix-column-price,
+#tix .tix-column-remaining,
+#tix .tix-column-quantity,
+#tix .tix-row-total {
+	text-align: right;
+}
+
+#tix .tix-row-total td:first-child:before {
+	content: "Total";
+}
+
+.tix-attendee-form td,
+.tix-attendee-form td.tix-left,
+.tix-attendee-form td.tix-right {
+	display: block;
+	width: 100%;
+}
+
+.tix-attendee-form td.tix-left {
+	padding-top: 1.5em;
+}
+
+.tix-attendee-form td.tix-right br {
+	display: none;
+}
+
+.tix-attendee-form td.tix-right {
+	padding-top: .5em;
+}
+
+.tix-attendee-form td.tix-right label {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.tix-attendee-form input[type="text"],
+.tix-attendee-form input[type="email"] {
+	width: 98%;
+}
+
+.page-slug-billetterie .tix-column-description {
+	width: 65%;
+}
+
+.tix-payment-method {
+	overflow: hidden;
+	border: solid 1px #c20041;
+	padding: 3px 3px 0;
+}
+
+.tix-payment-method label.tix-payment-tab:before,
+.tix-payment-method button.tix-payment-tab:after {
+	display: inline-block;
+	margin: 0 5px -10px;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	vertical-align: baseline;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	content: "\f09d";
+}
+
+.tix-payment-method button.tix-payment-tab:after {
+	content: "\f142";
+}
+
+.tix-payment-method .tix-payment-tab {
+	text-align: center;
+	border: none;
+}
+
+.tix-payment-method .tix-payment-tab {
+	line-height: 24px;
+}
+
+.tix-payment-method .tix-payment-tab.tix-tab-selected {
+	background-color: #c20041;
+	border: none;
+	border-width: 0;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Jetpack
+--------------------------------------------------------------*/
+
+.jetpack-video-wrapper .youtube-player {
+	margin: 0 auto !important;
+}
+
+.wcorg-organizers .jetpack-likes-widget-wrapper {
+	display: none;
+}
+
+#post-4 .contact-form input[type="text"],
+#post-4 .contact-form input[type="email"],
+#post-4 .contact-form textarea {
+	width: 100%;
 }
