@@ -1,4 +1,6 @@
 *DS_*
 *.log
 *.afdesign
-
+*.afphoto
+*_docs
+photos
