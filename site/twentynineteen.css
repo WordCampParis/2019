@@ -24,13 +24,12 @@
 	
 	body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
 		position: relative;
-		max-width: auto;
-		min-height: auto;
-		min-width: auto;
-		height: 100px;
-		width: auto;
-		padding: 0;
-		background-color: transparent;
+		max-width: 100% !important;
+		min-height: auto !important;
+		min-width: auto !important;
+		height: 100px !important;
+		width: auto !important;
+		padding: .2em !important;
 	}
 	
 	.site-description {
