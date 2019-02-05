@@ -18,13 +18,10 @@
 	color: #f3db31;
 }
 
-.site-header.featured-image {
-/* 	min-height: 100vh; */
-}
-
 /* Featured image */
 
 @media screen and (max-width: 37.5em) {
+	
 	body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
 		position: relative;
 		max-width: auto;
@@ -44,6 +41,10 @@
 		text-indent: 150%;
 		white-space: nowrap;
 		overflow: hidden;
+	}
+
+	.site-header.featured-image .site-featured-image .entry-header {
+		margin-top: 0;
 	}
 }
 
