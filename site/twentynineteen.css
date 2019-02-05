@@ -24,10 +24,6 @@
 
 /* Featured image */
 
-body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
-	background: transparent;
-}
-
 @media screen and (max-width: 37.5em) {
 	body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
 		position: relative;
@@ -36,6 +32,8 @@ body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-t
 		min-width: auto;
 		height: 100px;
 		width: auto;
+		padding: 0;
+		background-color: transparent;
 	}
 	
 	.site-description {
