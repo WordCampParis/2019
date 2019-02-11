@@ -18,6 +18,21 @@
 	color: #f3db31;
 }
 
+/* Animation SVG */
+
+.home #masthead::before {
+	content: "";
+	display: block; 
+	width: 100%; 
+	height: 75vh;
+	position: absolute;
+	top: auto;
+	left: 0;
+	background: url(https://demo.anybodesign.com/stuff/wcparis19.svg) center center no-repeat;
+	background-size: contain;
+	z-index: 10;
+}
+
 /* Featured image */
 
 @media screen and (max-width: 37.5em) {
