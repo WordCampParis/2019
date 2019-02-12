@@ -3,7 +3,7 @@
 /* Entête */
 
 /* Applique un arrière plan au logo sur les pages sans featured image */
-.site-header:not( featured-image ) img.custom-logo {
+.site-header:not( .featured-image ) img.custom-logo {
 	background-color: #0073aa;
 }
 
