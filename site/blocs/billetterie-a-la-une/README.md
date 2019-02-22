@@ -15,4 +15,3 @@ Bloc réutilisable qui vous permet d'ajouter un billet réaliste pour attirer l'
 Ajoutez le bloc réutilisable `billetterieALaUne` au tout début de votre article ou de votre page.
 
 ![Aperçu](https://github.com/WordCampParis/2019/blob/master/site/blocs/billetterie-a-la-une/screenshot.png)
-)
