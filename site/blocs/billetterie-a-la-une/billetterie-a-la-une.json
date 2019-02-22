@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "billetterieALaUne",
+  "content": "<!-- wp:html -->\n<div class=\"alignfull realistic-ticket-block\">\n\t<div class=\"realistic-ticket-wrapper\">\n\t\t<h2>La billetterie est ouverte !!</h2>\n\t\t<p>Remplacer ce texte par votre accroche</p>\n\t\t<p><a class=\"realistic-ticket\" href=\"https://2019.paris.wordcamp.org/billetterie/\">\n\t\t\t<span class=\"realistic-ticket__part-left\">\n\t\t\t\t<span class=\"realistic-ticket__info-label\">Billets disponibles</span>\n\t\t\t\t<span class=\"realistic-ticket__info-action\">Achetez les vôtres !</span>\n\t\t\t</span>\n\t\t\t<span class=\"realistic-ticket__part-right\">\n\t\t\t\t<span class=\"realistic-ticket__info-event\">WordCamp Paris 2019</span>\n\t\t\t</span>\n\t\t</a></p>\n\t</div>\n</div>\n<!-- /wp:html -->"
+}
