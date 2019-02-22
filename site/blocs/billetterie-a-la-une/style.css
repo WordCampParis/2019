@@ -35,8 +35,8 @@
 	position: relative;
 	float: left;
 	padding: 10px;
-    height: 140px;
-    /** Remplacer par votre l'URL vers votre image **/
+	height: 140px;
+	/** Remplacer par votre l'URL vers votre image **/
 	background-image: url(./billet-wordcamp.png);
 	background-repeat: no-repeat;
 	background-size: 460px 140px;
@@ -110,16 +110,16 @@
 	}
 
 	.realistic-ticket-wrapper p {
-        margin-bottom: 0;
-        margin-right: 20rem;
-        text-align: left;
+		margin-bottom: 0;
+		margin-right: 20rem;
+		text-align: left;
 	}
 
 	.realistic-ticket-wrapper .realistic-ticket {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-top: -20px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-top: -20px;
 	}
 }
 @media (min-width: 48em) {
@@ -128,10 +128,10 @@
 	}
 
 	.realistic-ticket-wrapper .realistic-ticket {
-        transform: rotate(-15deg);
+		transform: rotate(-15deg);
 	}
 
 	.realistic-ticket:hover {
-        transform: scale(1.1) rotate(-16deg);
+		transform: scale(1.1) rotate(-16deg);
 	}
 }
