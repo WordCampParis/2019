@@ -916,6 +916,11 @@ i.icon {
 	border-bottom: solid 1px #fff;
 }
 
+.home #footer-widgets #custom_html-3,
+.page-slug-sponsors #footer-widgets #custom_html-3 {
+	display: none;
+}
+
 @media screen and (max-width: 768px) {
 	#footer-widgets #menu-pied-de-page {
 		padding: 1em 0;
@@ -923,6 +928,10 @@ i.icon {
 
 	#footer-widgets #menu-pied-de-page li {
 		display: inline;
+	}
+
+	#footer-widgets #custom_html-3 img {
+		width: 100%;
 	}
 }
 
