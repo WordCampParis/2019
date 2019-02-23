@@ -108,6 +108,11 @@ i.icon {
 	content: " | ";
 }
 
+.home .widget-area #custom_html-3,
+.page-slug-sponsors .widget-area #custom_html-3 {
+	display: none;
+}
+
 /* Pied de page */
 
 #colophon .site-info {
@@ -535,6 +540,10 @@ label[for=tix-payment-method_paypal] {
 
 	.widget-area #menu-pied-de-page li {
 		display: inline;
+	}
+
+	.widget-area #custom_html-3 img {
+		width: 100%;
 	}
 
 	.wp-block-media-text.is-round.is-stacked-on-mobile img {
