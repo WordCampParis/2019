@@ -886,51 +886,51 @@ i.icon {
 	color: #0073aa;
 }
 
-#footer-widgets {
+.site-footer {
 	border-top: solid 1px #fff;
 	background: #c20041;
 	color: #fff;
 	text-align: center;
 }
 
-#footer-widgets #menu-pied-de-page {
+.site-footer #menu-pied-de-page {
 	overflow: hidden;
 	margin: 0;
 }
 
-#footer-widgets #menu-pied-de-page li {
+.site-footer #menu-pied-de-page li {
 	display: inline-block;
 	padding: 1em 0;
 }
 
-#footer-widgets #menu-pied-de-page li:not( :last-child ):after {
+.site-footer #menu-pied-de-page li:not( :last-child ):after {
 	content: " | ";
 }
 
-#footer-widgets #menu-pied-de-page a,
-#footer-widgets #menu-pied-de-page a:hover {
+.site-footer #menu-pied-de-page a,
+.site-footer #menu-pied-de-page a:hover {
 	color: #fff;
 }
 
-#footer-widgets #menu-pied-de-page a:hover {
+.site-footer #menu-pied-de-page a:hover {
 	border-bottom: solid 1px #fff;
 }
 
-.home #footer-widgets #custom_html-3,
-.page-slug-sponsors #footer-widgets #custom_html-3 {
+.home .site-footer #custom_html-3,
+.page-slug-sponsors .site-footer #custom_html-3 {
 	display: none;
 }
 
 @media screen and (max-width: 768px) {
-	#footer-widgets #menu-pied-de-page {
+	.site-footer #menu-pied-de-page {
 		padding: 1em 0;
 	}
 
-	#footer-widgets #menu-pied-de-page li {
+	.site-footer #menu-pied-de-page li {
 		display: inline;
 	}
 
-	#footer-widgets #custom_html-3 img {
+	.site-footer #custom_html-3 img {
 		width: 100%;
 	}
 }
