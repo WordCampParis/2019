@@ -440,6 +440,12 @@ body.admin-bar #tix {
 	margin-right: 2em;
 }
 
+tr.tix-row-question-1720 .tix-right label,
+tr.tix-row-question-1726 .tix-right label,
+tr.tix-row-question-1727 .tix-right label {
+	display: block;
+}
+
 .tix-attendee-form input[type="text"],
 .tix-attendee-form input[type="email"] {
 	width: 98%;
@@ -462,6 +468,19 @@ body.admin-bar #tix {
 .page-slug-billetterie .tix-column-description {
 	width: 60%;
 	word-break: keep-all;
+}
+
+.page-slug-billetterie table.tix-ticket-form th,
+.page-slug-billetterie table.tix-ticket-form td {
+	border: none;
+}
+
+.page-slug-billetterie table.tix-ticket-form tr td:first-child {
+	width: 55%;
+}
+
+.page-slug-billetterie table.tix-ticket-form tr td:not(:first-child) {
+	vertical-align: middle;
 }
 
 .tix-payment-method {
@@ -515,6 +534,11 @@ label[for=tix-payment-method_paypal] {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	font-size: 110% !important;
 	vertical-align: top;
+}
+
+#solo-jdc:target ~ .tix-js .tix_tickets_table tr:not(:first-child),
+#solo-jdc:target ~ .tix-js #tix-infos {
+	display: none !important;
 }
 
 /** Billetterie à la Une **/
