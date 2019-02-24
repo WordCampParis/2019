@@ -643,39 +643,6 @@ label[for=tix-payment-method_paypal] {
 		height: auto;
 		border-radius: 0;
 	}
-
-	.home .site-header.featured-image {
-		margin-bottom: 0;
-	}
-
-	.entry .entry-content .realistic-ticket-block {
-		background-color: rgba(191, 220, 234, .4);
-		margin-top: 0;
-	}
-
-	.realistic-ticket-block h2 {
-		text-align: left;
-	}
-
-	.realistic-ticket-wrapper {
-		position: relative;
-		max-width: 70%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.realistic-ticket-wrapper p {
-		margin-bottom: 0;
-		margin-right: 20rem;
-		text-align: left;
-	}
-
-	.realistic-ticket-wrapper .realistic-ticket {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		margin-top: -20px;
-	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -711,6 +678,39 @@ label[for=tix-payment-method_paypal] {
 
 	body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
 		top: 35%;
+	}
+
+	.home .site-header.featured-image {
+		margin-bottom: 0;
+	}
+
+	.entry .entry-content .realistic-ticket-block {
+		background-color: rgba(191, 220, 234, .4);
+		margin-top: 0;
+	}
+
+	.realistic-ticket-block h2 {
+		text-align: left;
+	}
+
+	.realistic-ticket-wrapper {
+		position: relative;
+		max-width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.realistic-ticket-wrapper p {
+		margin-bottom: 0;
+		margin-right: 20rem;
+		text-align: left;
+	}
+
+	.realistic-ticket-wrapper .realistic-ticket {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-top: -20px;
 	}
 }
 
