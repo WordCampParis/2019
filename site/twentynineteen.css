@@ -108,6 +108,13 @@ i.icon {
 	content: " | ";
 }
 
+.home .widget-area #custom_html-3,
+.home .widget-area #custom_html-6,
+.page-slug-sponsors .widget-area #custom_html-3,
+.page-slug-sponsors .widget-area #custom_html-6 {
+	display: none;
+}
+
 /* Pied de page */
 
 #colophon .site-info {
@@ -433,6 +440,12 @@ body.admin-bar #tix {
 	margin-right: 2em;
 }
 
+tr.tix-row-question-1720 .tix-right label,
+tr.tix-row-question-1726 .tix-right label,
+tr.tix-row-question-1727 .tix-right label {
+	display: block;
+}
+
 .tix-attendee-form input[type="text"],
 .tix-attendee-form input[type="email"] {
 	width: 98%;
@@ -455,6 +468,19 @@ body.admin-bar #tix {
 .page-slug-billetterie .tix-column-description {
 	width: 60%;
 	word-break: keep-all;
+}
+
+.page-slug-billetterie table.tix-ticket-form th,
+.page-slug-billetterie table.tix-ticket-form td {
+	border: none;
+}
+
+.page-slug-billetterie table.tix-ticket-form tr td:first-child {
+	width: 55%;
+}
+
+.page-slug-billetterie table.tix-ticket-form tr td:not(:first-child) {
+	vertical-align: middle;
 }
 
 .tix-payment-method {
@@ -510,6 +536,100 @@ label[for=tix-payment-method_paypal] {
 	vertical-align: top;
 }
 
+#solo-jdc:target ~ .tix-js .tix_tickets_table tr:not(:first-child),
+#solo-jdc:target ~ .tix-js #tix-infos {
+	display: none !important;
+}
+
+/** Billetterie à la Une **/
+.entry .entry-content .realistic-ticket-block {
+	text-align: center;
+}
+
+.realistic-ticket-block h2:before {
+	display: none;
+}
+
+.realistic-ticket-wrapper .realistic-ticket {
+	display: inline-block;
+	min-width: 280px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	transform: rotate(-5deg);
+}
+
+.realistic-ticket .realistic-ticket__part-left {
+	width: 180px;
+	background-position: 0 0;
+	transform-origin: 100% 100%;
+}
+
+.realistic-ticket:focus .realistic-ticket__part-right,
+.realistic-ticket:hover .realistic-ticket__part-right {
+	transform: rotate(10deg);
+}
+
+.realistic-ticket .realistic-ticket__part-left,
+.realistic-ticket .realistic-ticket__part-right {
+	position: relative;
+	float: left;
+	padding: 10px;
+	height: 140px;
+	background-image: url('https://2019.paris.wordcamp.org/files/2019/02/billet-wordcamp.png');
+	background-repeat: no-repeat;
+	background-size: 460px 140px;
+	transition: all .15s ease;
+}
+
+.realistic-ticket .realistic-ticket__info-label,
+.realistic-ticket .realistic-ticket__info-action {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.realistic-ticket .realistic-ticket__info-label {
+	top: 0;
+	bottom: 50%;
+}
+
+.realistic-ticket .realistic-ticket__info-action,
+.realistic-ticket .realistic-ticket__info-event,
+.realistic-ticket .realistic-ticket__info-label {
+	padding: 15px;
+	transition: all .15s ease;
+}
+
+.realistic-ticket .realistic-ticket__info-action {
+	top: 50%;
+	bottom: 0;
+	color: hsla(0,0%,100%,.9);
+}
+
+.realistic-ticket .realistic-ticket__part-right {
+	width: 100px;
+	border-left: 10px dotted #e8f5f6;
+	margin-left: -2px;
+	background-position: 100% 0;
+	transform-origin: 0 100%;
+}
+
+.realistic-ticket .realistic-ticket__info-event {
+	position: absolute;
+	padding-top: 25px;
+	top: 100%;
+	left: 0;
+	font-weight: 300;
+	width: 140px;
+	transform: rotate(-90deg);
+	transform-origin: 0 0;
+	color: rgba(0, 0, 0, .9);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -535,6 +655,11 @@ label[for=tix-payment-method_paypal] {
 
 	.widget-area #menu-pied-de-page li {
 		display: inline;
+	}
+
+	.widget-area #custom_html-3 img,
+	.widget-area #custom_html-6 img {
+		width: 100%;
 	}
 
 	.wp-block-media-text.is-round.is-stacked-on-mobile img {
@@ -577,6 +702,39 @@ label[for=tix-payment-method_paypal] {
 
 	body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-thumbnail img {
 		top: 35%;
+	}
+
+	.home .site-header.featured-image {
+		margin-bottom: 0;
+	}
+
+	.entry .entry-content .realistic-ticket-block {
+		background-color: rgba(191, 220, 234, .4);
+		margin-top: 0;
+	}
+
+	.realistic-ticket-block h2 {
+		text-align: left;
+	}
+
+	.realistic-ticket-wrapper {
+		position: relative;
+		max-width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.realistic-ticket-wrapper p {
+		margin-bottom: 0;
+		margin-right: 20rem;
+		text-align: left;
+	}
+
+	.realistic-ticket-wrapper .realistic-ticket {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-top: -20px;
 	}
 }
 
@@ -643,6 +801,20 @@ label[for=tix-payment-method_paypal] {
 	.post-navigation .nav-links,
 	.comments-area {
 		max-width: 100%;
+	}
+}
+
+@media (min-width: 48em) {
+	.realistic-ticket-wrapper {
+		padding: 1rem 0;
+	}
+
+	.realistic-ticket-wrapper .realistic-ticket {
+		transform: rotate(-15deg);
+	}
+
+	.realistic-ticket:hover {
+		transform: scale(1.1) rotate(-16deg);
 	}
 }
 
