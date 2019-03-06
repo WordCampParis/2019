@@ -444,13 +444,33 @@ body.page-slug-programme .entry-content .wcpt-session-speakers:before {
 
 body.page-slug-programme .entry-content table tr.pause,
 body.page-slug-programme .entry-content table tr.pause-caf,
-body.page-slug-programme .entry-content table tr.pause-djeuner {
+body.page-slug-programme .entry-content table tr.pause-djeuner,
+body.page-slug-programme .entry-content table tr.introduction-de-la-2e-journe,
+body.page-slug-programme .entry-content table tr.remarques-douverture,
+body.page-slug-programme .entry-content table tr.remarques-de-clture {
 	background-color: #e4ecf6;
+}
+
+body.page-slug-programme .entry-content table tr.accueil-des-participantes,
+body.page-slug-programme .entry-content table tr.la-surprise-de-lquipe-dorganisation- {
+    background-color: #006799;
+    color: #FFF;
+    font-weight: bold;
+}
+
+body.page-slug-programme .entry-content table tr.la-surprise-de-lquipe-dorganisation- {
+    background-color: rgba(255,225,0,0.4);
+    color: #006799;
 }
 
 body.page-slug-programme .entry-content tr.pause-djeuner .wcb-session-favourite-icon,
 body.page-slug-programme .entry-content tr.pause-caf .wcb-session-favourite-icon,
-body.page-slug-programme .entry-content tr.pause .wcb-session-favourite-icon {
+body.page-slug-programme .entry-content tr.pause .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content tr.accueil-des-participantes .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content tr.la-surprise-de-lquipe-dorganisation- .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content table tr.introduction-de-la-2e-journe .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content table tr.remarques-douverture .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content table tr.remarques-de-clture .wcb-session-favourite-icon {
 	display: none;
 }
 
@@ -463,8 +483,15 @@ body.page-slug-programme .entry-content table tr.pause-caf td {
 	padding: 1em .5em;
 }
 
-body.page-slug-programme .entry-content table tr.pause-djeuner td {
+body.page-slug-programme .entry-content table tr.pause-djeuner td,
+body.page-slug-programme .entry-content table tr.accueil-des-participantes td {
 	padding: 3em .5em;
+}
+
+body.page-slug-programme .entry-content table tr.la-surprise-de-lquipe-dorganisation- td,
+body.page-slug-programme .entry-content table tr.remarques-douverture td,
+body.page-slug-programme .entry-content table tr.remarques-de-clture td {
+     padding: 2em .5em;
 }
 
 body.page-slug-programme .entry-content .wcb-session-favourite-icon {
