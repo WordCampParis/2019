@@ -340,6 +340,10 @@ body.single-wcb_session .session-speakers:after {
     content: '·rice';
 }
 
+article.type-wcb_session .byline {
+	display: none;
+}
+
 .wp-block-table.sponsors-2019 tr td {
 	width: 15%;
 	text-align: center;
