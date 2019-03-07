@@ -524,14 +524,14 @@ td.wcb-favourite-session a.fav-session-button,
 	color: #006799;
 }
 
-.entry-content .fav-session-email-form-show {
+.entry .entry-content .fav-session-email-form-show {
 	width: 350px;
 	font-size: inherit;
 	border-radius: 0;
 	border: none;
 }
 
-.entry-content .show-email-form {
+.entry .entry-content .show-email-form {
 	width: auto;
 }
 
