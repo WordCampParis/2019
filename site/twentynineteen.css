@@ -965,7 +965,8 @@ body.page-slug-programme .entry .entry-content .realistic-ticket-block {
 		top: 35%;
 	}
 
-	.home .site-header.featured-image {
+	.home .site-header.featured-image,
+	body.page-slug-sessions .site-header.featured-image {
 		margin-bottom: 0;
 	}
 
