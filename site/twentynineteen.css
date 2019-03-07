@@ -689,7 +689,8 @@ body.admin-bar #tix {
 
 tr.tix-row-question-1720 .tix-right label,
 tr.tix-row-question-1726 .tix-right label,
-tr.tix-row-question-1727 .tix-right label {
+tr.tix-row-question-1727 .tix-right label,
+tr.tix-row-question-2363 .tix-right label {
 	display: block;
 }
 
