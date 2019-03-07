@@ -494,6 +494,11 @@ body.page-slug-programme .entry-content table tr.remarques-de-clture td {
      padding: 2em .5em;
 }
 
+.entry .entry-content .wcb-session-category-propos-eclair a.wcpt-session-title:before {
+	display: inline-block;
+	content: "⚡️ "
+}
+
 body.page-slug-programme .entry-content .wcb-session-favourite-icon {
 	float: none;
 	text-align: right;
@@ -580,10 +585,28 @@ td.wcb-favourite-session a.fav-session-button,
 }
 
 .single-wcb_speaker .entry-content .speaker-avatar img {
-    width: 96px;
-    height: 96px;
-    float: left;
-    margin: 0 1em 0.5em 0;
+	width: 96px;
+	height: 96px;
+	float: left;
+	margin: 0 1em 0.5em 0;
+}
+
+body.page-slug-sessions .wcorg-session-description img.avatar {
+	display: inline-block;
+	position: absolute;
+	top: -5px;
+}
+
+body.page-slug-sessions .wcorg-session-description img:nth-of-type(2n) {
+	right: 40px;
+}
+
+body.page-slug-sessions .wcorg-session-description {
+	position: relative;
+}
+
+body.page-slug-sessions .wcorg-session-description .wcpt-session-meta {
+	margin-left: 60px;
 }
 
 @media screen and (max-width: 700px) {
@@ -854,6 +877,10 @@ label[for=tix-payment-method_paypal] {
 	color: rgba(0, 0, 0, .9);
 }
 
+body.page-slug-programme .entry .entry-content .realistic-ticket-block {
+	background: none;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -873,6 +900,14 @@ label[for=tix-payment-method_paypal] {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 60px;
+	}
+
+	body.page-slug-sessions .wcorg-session-description img.avatar {
+		display: none;
+	}
+
+	body.page-slug-sessions .wcorg-session-description .wcpt-session-meta {
+		margin-left: 0;
 	}
 
 	.widget-area #menu-pied-de-page {
