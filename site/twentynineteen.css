@@ -369,6 +369,8 @@ article.type-wcb_session .byline {
 
 .post-slug-appel-a-sponsors .contact-form input[type="text"],
 .post-slug-appel-a-sponsors .contact-form input[type="email"],
+.page-slug-autorisation-de-diffusion .contact-form input[type="text"],
+.page-slug-autorisation-de-diffusion .contact-form input[type="email"],
 .post-slug-appel-a-sponsors .contact-form textarea {
 	width: 100%;
 }
@@ -917,6 +919,38 @@ body.page-slug-programme .entry .entry-content .realistic-ticket-block {
 		margin-left: 0;
 	}
 
+	#tix-attendees .avatar {
+		width: 96px;
+		height: auto;
+		display: block;
+	}
+
+	#tix-attendees ul li {
+		display: block;
+		clear: both;
+		float: inherit;
+		width: 98% !important;
+		height: auto;
+		padding: 2em 0 1em;
+		border-top: dotted 1px #ccc;
+		overflow: hidden;
+	}
+
+	#tix-attendees ul li:first-child {
+		border-top: none;
+	}
+
+	#tix-attendees .tix-field {
+		margin-left: 110px;
+		padding-top: 5px;
+	}
+
+	#tix-attendees .tix-field .tix-first,
+	#tix-attendees .tix-field .tix-last {
+		font-size: initial;
+		font-weight: bold;
+	}
+
 	.widget-area #menu-pied-de-page {
 		padding: 1em 0;
 	}
@@ -975,6 +1009,7 @@ body.page-slug-programme .entry .entry-content .realistic-ticket-block {
 	.home .site-header.featured-image,
 	body.page-slug-sessions .site-header.featured-image,
 	body.page-slug-contributor-day .site-header.featured-image,
+	body.page-slug-participant-e-s .site-header.featured-image,
 	body.page-slug-contributeur-rice-s .site-header.featured-image {
 		margin-bottom: 0;
 	}
