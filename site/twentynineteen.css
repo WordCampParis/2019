@@ -281,10 +281,12 @@ h4.bronze {
 
 /* WordCamp Post Types */
 
+.wcorg-speakers .jetpack-likes-widget-wrapper,
 .wcorg-organizers .jetpack-likes-widget-wrapper {
 	display: none;
 }
 
+.entry-content .wcorg-speakers,
 .wcorg-organizers {
 	position: relative;
 	margin: 1.5em auto;
@@ -293,20 +295,24 @@ h4.bronze {
 	padding-bottom: 1em;
 }
 
+[class~='wcorg-speakers']:last-of-type,
 [class~='wcorg-organizers']:last-of-type {
 	border-bottom: none;
 }
 
+.wcorg-speaker:nth-child(n+2),
 .wcorg-organizer:nth-child(n+2) {
 	border-top: dotted 1px #0073aa;
 	margin-top: 2em;
 	padding-top: 2em;
 }
 
+.wcorg-speaker h2:before,
 .wcorg-organizer h2:before {
 	display: none;
 }
 
+.wcorg-speaker h2,
 .wcorg-organizer h2 {
 	position: absolute;
 	width: 100%;
@@ -316,6 +322,7 @@ h4.bronze {
 	color: #0073aa;
 }
 
+.entry-content .wcorg-speaker-description img.avatar,
 .entry-content .wcorg-organizer-description img.avatar {
 	height: 100px;
 	width: 100px;
@@ -327,6 +334,14 @@ h4.bronze {
 
 .page-slug-organisateur-rice-s .entry-content > h2 {
 	font-size: 1.25em;
+}
+
+body.single-wcb_session .session-speakers:after {
+    content: '·rice';
+}
+
+article.type-wcb_session .byline {
+	display: none;
 }
 
 .wp-block-table.sponsors-2019 tr td {
@@ -380,6 +395,238 @@ body.single-wcb_sponsor .site-header.featured-image .site-featured-image .post-t
 	background-color: rgba(255,255,255,0.85);
 	top: 50%;
 	padding: 1em;
+}
+
+body.page-slug-programme .entry-content table.wcpt-schedule .wcpt-track-name {
+	display: none;
+}
+
+body.page-slug-programme .entry-content table.wcpt-schedule thead th,
+body.page-slug-programme .entry-content tbody td {
+	border: none;
+}
+
+body.page-slug-programme .entry-content table.wcpt-schedule thead tr {
+	border-bottom: solid 4px #006799;
+}
+
+body.page-slug-programme .entry-content table.wcpt-schedule tbody tr {
+	border-bottom: solid 1px #e4ecf6;
+}
+
+table.wcpt-schedule td,
+table.wcpt-schedule th {
+	word-break: keep-all;
+}
+
+table.wcpt-schedule th {
+	text-align: left;
+}
+
+table.wcpt-schedule td:first-child {
+	vertical-align: middle;
+}
+
+body.page-slug-programme .entry-content a.wcpt-session-title {
+	display: inline-block;
+	color: #006799;
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+body.page-slug-programme .entry-content .wcpt-session-speakers {
+	display: block;
+}
+
+body.page-slug-programme .entry-content .wcpt-session-speakers:before {
+	content: 'Orateur·rice : ';
+}
+
+body.page-slug-programme .entry-content table tr.pause,
+body.page-slug-programme .entry-content table tr.pause-caf,
+body.page-slug-programme .entry-content table tr.pause-djeuner,
+body.page-slug-programme .entry-content table tr.introduction-de-la-2e-journe,
+body.page-slug-programme .entry-content table tr.remarques-douverture,
+body.page-slug-programme .entry-content table tr.remarques-de-clture {
+	background-color: #e4ecf6;
+}
+
+body.page-slug-programme .entry-content table tr.accueil-des-participantes,
+body.page-slug-programme .entry-content table tr.la-surprise-de-lquipe-dorganisation- {
+    background-color: #006799;
+    color: #FFF;
+    font-weight: bold;
+}
+
+body.page-slug-programme .entry-content table tr.la-surprise-de-lquipe-dorganisation- {
+    background-color: rgba(255,225,0,0.4);
+    color: #006799;
+}
+
+body.page-slug-programme .entry-content tr.pause-djeuner .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content tr.pause-caf .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content tr.pause .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content tr.accueil-des-participantes .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content tr.la-surprise-de-lquipe-dorganisation- .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content table tr.introduction-de-la-2e-journe .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content table tr.remarques-douverture .wcb-session-favourite-icon,
+body.page-slug-programme .entry-content table tr.remarques-de-clture .wcb-session-favourite-icon {
+	display: none;
+}
+
+.entry-content table.wcpt-schedule .wcpt-session-type-session .wcb-session-cell-content {
+	margin-bottom: 32px;
+}
+
+body.page-slug-programme .entry-content table tr.pause td,
+body.page-slug-programme .entry-content table tr.pause-caf td {
+	padding: 1em .5em;
+}
+
+body.page-slug-programme .entry-content table tr.pause-djeuner td,
+body.page-slug-programme .entry-content table tr.accueil-des-participantes td {
+	padding: 3em .5em;
+}
+
+body.page-slug-programme .entry-content table tr.la-surprise-de-lquipe-dorganisation- td,
+body.page-slug-programme .entry-content table tr.remarques-douverture td,
+body.page-slug-programme .entry-content table tr.remarques-de-clture td {
+     padding: 2em .5em;
+}
+
+.entry .entry-content .wcb-session-category-propos-eclair a.wcpt-session-title:before {
+	display: inline-block;
+	content: "⚡️ "
+}
+
+body.page-slug-programme .entry-content .wcb-session-favourite-icon {
+	float: none;
+	text-align: right;
+	width: 100%;
+}
+
+body.page-slug-programme .entry-content .wcb-favourite-session {
+	background-color: rgba(255,225,0,0.1);
+}
+
+div.wcb-session-favourite-icon a.fav-session-button {
+	color: rgba(255,225,0,1);
+}
+
+div.wcb-session-favourite-icon a.fav-session-button:hover,
+#content a.fav-session-button:hover,
+td.wcb-favourite-session a.fav-session-button,
+.entry-content .show-email-form,
+.entry-content a.show-email-form,
+.entry-content .show-email-form:hover,
+.entry-content a.show-email-form:hover,
+#content a.show-email-form:hover {
+	color: #006799;
+}
+
+.entry .entry-content .fav-session-email-form-show {
+	width: 350px;
+	font-size: inherit;
+	border-radius: 0;
+	border: none;
+}
+
+.entry .entry-content .show-email-form {
+	width: auto;
+}
+
+.entry-content .show-email-form,
+.entry-content a.show-email-form {
+	text-decoration: none;
+}
+
+.entry-content .show-email-form {
+	background-color: #fffce4;
+	border: none;
+	line-height: 23px;
+	border-radius: 0;
+}
+
+.entry-content .fav-session-share-tab {
+	border: none;
+	color: #006799;
+}
+
+.entry-content .fav-session-tablinks,
+.entry-content .fav-session-tablinks.active {
+	font-size: inherit;
+}
+
+.entry-content .fav-session-tablinks {
+	background: rgba(255,225,0,0.3);
+}
+
+.entry-content .fav-session-share-tabcontent,
+.entry-content .fav-session-share-tab div.active,
+.entry-content .fav-session-tablinks:hover {
+	background-color: #fffce4;
+	border: none;
+	color: #006799;
+}
+
+#fav-session-print {
+	margin: 1.5em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#fav-sessions-link {
+	font-size: 70%;
+	word-break: break-all;
+	display: block;
+	border: solid 1px #006799;
+	background: #fff;
+	padding: 0.5em;
+}
+
+.single-wcb_speaker .entry-content .speaker-avatar img {
+	width: 96px;
+	height: 96px;
+	float: left;
+	margin: 0 1em 0.5em 0;
+}
+
+body.page-slug-sessions .wcorg-session-description img.avatar {
+	display: inline-block;
+	position: absolute;
+	top: -5px;
+}
+
+body.page-slug-sessions .wcorg-session-description img:nth-of-type(2n) {
+	right: 40px;
+}
+
+body.page-slug-sessions .wcorg-session-description {
+	position: relative;
+}
+
+body.page-slug-sessions .wcorg-session-description .wcpt-session-meta {
+	margin-left: 60px;
+}
+
+@media screen and (max-width: 700px) {
+	body.page-slug-programme .entry-content table.wcpt-schedule tbody tr {
+		border: solid 1px #006799;
+		border-bottom: none;
+	}
+
+	body.page-slug-programme .entry-content table.wcpt-schedule tbody tr td:not(:first-child) {
+		border-bottom: solid 1px #006799;
+	}
+
+	.show-email-form, .email-form {
+		right: 0px;
+	}
+
+	.single-wcb_speaker .entry-content .speaker-avatar img {
+        float: none;
+        margin: 0 auto;
+	}
 }
 
 /* CampTix */
@@ -442,7 +689,8 @@ body.admin-bar #tix {
 
 tr.tix-row-question-1720 .tix-right label,
 tr.tix-row-question-1726 .tix-right label,
-tr.tix-row-question-1727 .tix-right label {
+tr.tix-row-question-1727 .tix-right label,
+tr.tix-row-question-2363 .tix-right label {
 	display: block;
 }
 
@@ -630,6 +878,16 @@ label[for=tix-payment-method_paypal] {
 	color: rgba(0, 0, 0, .9);
 }
 
+.realistic-ticket .realistic-ticket__info-event.jdc {
+	font-weight: 600;
+	font-size: 80%;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(28,110,164,0);
+}
+
+body.page-slug-programme .entry .entry-content .realistic-ticket-block {
+	background: none;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -637,16 +895,26 @@ label[for=tix-payment-method_paypal] {
 		text-align: center;
 	}
 
+	.wcorg-speaker h2,
 	.wcorg-organizer h2 {
 		margin-left: 0;
 		margin-top: 75px;
 		text-align: center;
 	}
 
+	.wcorg-speaker-description img.avatar,
 	.wcorg-organizer-description img.avatar {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 60px;
+	}
+
+	body.page-slug-sessions .wcorg-session-description img.avatar {
+		display: none;
+	}
+
+	body.page-slug-sessions .wcorg-session-description .wcpt-session-meta {
+		margin-left: 0;
 	}
 
 	.widget-area #menu-pied-de-page {
@@ -704,7 +972,9 @@ label[for=tix-payment-method_paypal] {
 		top: 35%;
 	}
 
-	.home .site-header.featured-image {
+	.home .site-header.featured-image,
+	body.page-slug-sessions .site-header.featured-image,
+	body.page-slug-contributor-day .site-header.featured-image {
 		margin-bottom: 0;
 	}
 
