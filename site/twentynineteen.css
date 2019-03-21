@@ -336,10 +336,6 @@ h4.bronze {
 	font-size: 1.25em;
 }
 
-body.single-wcb_session .session-speakers:after {
-    content: '·rice';
-}
-
 article.type-wcb_session .byline {
 	display: none;
 }
