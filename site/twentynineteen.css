@@ -593,7 +593,7 @@ table.wp-block-table.causerie td {
 	word-break: keep-all;
 }
 
-table.wp-block-table.causerie td:first-child {
+table.wp-block-table.causerie td:nth-child(2) {
 	width: 20%;
 }
 
@@ -987,10 +987,15 @@ body.page-slug-programme .entry .entry-content .realistic-ticket-block {
 
 	table.wp-block-table.causerie td:first-child {
 		width: auto;
+		border-bottom: none;
+	}
+
+	table.wp-block-table.causerie td:nth-child(2) {
+		width: auto;
 		border-bottom: dotted 1px;
 	}
 
-	table.wp-block-table.causerie td:not(:first-child) {
+	table.wp-block-table.causerie td:nth-child(3) {
 		border-top: none;
 	}
 }
