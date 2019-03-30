@@ -328,6 +328,17 @@ h4.bronze {
 	width: 100px;
 }
 
+article.wcb_track-mercredi-24-04-2019 h2.session-speakers {
+    position: relative;
+}
+
+article.wcb_track-mercredi-24-04-2019 h2.session-speakers:after {
+    content: "Animateur·rice";
+    position: absolute;
+    left: 0;
+    background-color: #FFF;
+}
+
 .page-slug-organisateur-rice-s .entry-content > h2:before {
 	display: none;
 }
