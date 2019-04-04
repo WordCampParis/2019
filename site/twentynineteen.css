@@ -629,8 +629,38 @@ body.page-slug-sessions .wcorg-session-description {
 	position: relative;
 }
 
-body.page-slug-sessions .wcorg-session-description .wcpt-session-meta {
+body.page-slug-sessions .wcorg-session-description .wcpt-session-meta,
+body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description .wcpt-session-meta {
 	margin-left: 60px;
+}
+
+body.page-slug-programme-de-la-journee-de-contribution .wcorg-session h2:first-child {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+body.page-slug-programme-de-la-journee-de-contribution .wcorg-session {
+	position: relative;
+    padding-bottom: 3em;
+}
+
+body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description img.avatar {
+	display: block;
+	margin-top: -3em;
+}
+
+body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description img[src*="cd4567bb7609300a001fb1feb46e16ce"] {
+	position: absolute;
+	margin-top: -2.2em;
+	right: 180px;
 }
 
 @media screen and (max-width: 700px) {
@@ -933,11 +963,13 @@ body.page-slug-programme .entry .entry-content .realistic-ticket-block {
 		margin-bottom: 60px;
 	}
 
-	body.page-slug-sessions .wcorg-session-description img.avatar {
+	body.page-slug-sessions .wcorg-session-description img.avatar,
+	body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description img.avatar {
 		display: none;
 	}
 
-	body.page-slug-sessions .wcorg-session-description .wcpt-session-meta {
+	body.page-slug-sessions .wcorg-session-description .wcpt-session-meta,
+	body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description .wcpt-session-meta {
 		margin-left: 0;
 	}
 
