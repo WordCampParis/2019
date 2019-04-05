@@ -648,11 +648,16 @@ body.page-slug-sessions .wcorg-session-description img.avatar {
 	margin-top: -3em;
 }
 
-body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description img[src*="cd4567bb7609300a001fb1feb46e16ce"],
-body.page-slug-sessions .wcorg-session-description img[src*="04513b1ebb61204c1c247c568d190303"] {
+body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-description img[src*="cd4567bb7609300a001fb1feb46e16ce"] {
 	position: absolute;
 	margin-top: -2.2em;
 	right: 180px;
+}
+
+body.page-slug-sessions .wcorg-session-description img[src*="04513b1ebb61204c1c247c568d190303"] {
+	position: absolute;
+	margin-top: -3em;
+	right: 40px;
 }
 
 @media screen and (max-width: 700px) {
