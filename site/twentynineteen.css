@@ -849,7 +849,7 @@ label[for=tix-payment-method_paypal] {
 #tix table.tix-ticket-form:before,
 #tix table.tix-attendee-form:before {
     position: absolute;
-    content: "Notez qu’au delà du 15 avril 2019 à 00h01, les modifications apportées à un billet ou les rachats éventuels de billets ne sont plus garanties d’effet.";
+    content: "Notez qu’au delà du 15 avril 2019 à 00h01, les modifications apportées à un billet ou les rachats éventuels de billets ne sont plus garantis d’effet.";
     display: block;
     top: -5em;
     background-color: #0073aa;
