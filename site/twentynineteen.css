@@ -840,6 +840,32 @@ label[for=tix-payment-method_paypal] {
 	display: none !important;
 }
 
+#tix table.tix-ticket-form,
+#tix table.tix-attendee-form {
+    position: relative;
+    margin-top: 5em;
+}
+
+#tix table.tix-ticket-form:before,
+#tix table.tix-attendee-form:before {
+    position: absolute;
+    content: "Notez qu’au delà du 15 avril 2019 à 00h01, les modifications apportées à un billet ou les rachats éventuels de billets ne sont plus garanties d’effet.";
+    display: block;
+    top: -5em;
+    background-color: #0073aa;
+    padding: 0.5em;
+    color: #FFF;
+    font-weight: 700;
+}
+
+#tix table.tix-attendee-form {
+    margin-top: 6em;
+}
+
+#tix table.tix-attendee-form:before {
+    top: -5em;
+}
+
 /** Billetterie à la Une **/
 .entry .entry-content .realistic-ticket-block {
 	text-align: center;
