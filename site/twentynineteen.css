@@ -866,6 +866,14 @@ label[for=tix-payment-method_paypal] {
     top: -5em;
 }
 
+#tix form[action*="tix_action=checkout"] table.tix-attendee-form:before {
+    display: none;
+}
+
+#tix form[action*="tix_action=checkout"] table.tix-attendee-form {
+    margin-top: inherit;
+}
+
 /** Billetterie à la Une **/
 .entry .entry-content .realistic-ticket-block {
 	text-align: center;
