@@ -367,12 +367,6 @@ article.type-wcb_session .byline {
 	border: none;
 }
 
-.wp-block-table.sponsors-2019 tr td:nth-child(2),
-.wp-block-table.sponsors-2019 tr td:nth-child(5),
-.wp-block-table.sponsors-2019 tr td:nth-child(6) {
-    background: repeating-linear-gradient(60deg, white, white 10px, #999 10px, #999 20px);
-}
-
 .wp-block-table.sponsors-2019 tr td:first-child {
 	width: 25%;
 	text-align: left;
