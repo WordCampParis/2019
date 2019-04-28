@@ -618,6 +618,32 @@ body.page-slug-programme-de-la-journee-de-contribution .wcorg-session-descriptio
 	margin-left: 60px;
 }
 
+body.page-slug-sessions .jetpack-likes-widget-wrapper {
+    display: none;
+}
+
+body.page-slug-sessions a[href$=".pdf"]:before {
+   display: inline-block;
+   margin: 0 5px -10px;
+   width: auto;
+   height: auto;
+   line-height: normal;
+   vertical-align: baseline;
+   background-image: none;
+   background-position: 0 0;
+   background-repeat: repeat;
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   -webkit-font-smoothing: antialiased;
+   content: "\f15c";
+}
+
+body.page-slug-sessions .wcorg-session-links {
+    padding-left: 0;
+}
+
 body.page-slug-programme-de-la-journee-de-contribution .wcorg-session h2:first-child {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
