@@ -111,7 +111,9 @@ i.icon {
 .home .widget-area #custom_html-3,
 .home .widget-area #custom_html-6,
 .page-slug-sponsors .widget-area #custom_html-3,
-.page-slug-sponsors .widget-area #custom_html-6 {
+.page-slug-sponsors .widget-area #custom_html-6,
+.post-slug-merci-a-nos-sponsors .widget-area #custom_html-3,
+.post-slug-merci-a-nos-sponsors .widget-area #custom_html-6 {
 	display: none;
 }
 
