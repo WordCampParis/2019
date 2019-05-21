@@ -604,6 +604,10 @@ table.wp-block-table.causerie td:nth-child(2) {
 	width: 20%;
 }
 
+table.wp-block-table.droite-seconde td:nth-child(2) {
+    text-align: right;
+}
+
 .single-wcb_speaker .entry-content .speaker-avatar img {
 	width: 96px;
 	height: 96px;
