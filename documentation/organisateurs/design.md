@@ -9,6 +9,7 @@
 	+ le visuel du T-shirt des membres du staff (Organisateurs + bénévoles) ;
 	+ le style du site Internet du WordCamp ;
 	+ les images en une du site ;
-	+ les éléments de signalétique pour le lieu ;
+	+ les éléments de signalétique pour le lieu (affiche, plv, rollup) ;
 	+ le badge des participants ;
-	+ les éléments graphiques de la présentation utilisée lors des remarques d'ouverture et de clôture.
+	+ les éléments graphiques de la présentation utilisée lors des remarques d'ouverture et de clôture ;
+	+ le programme des participants.
