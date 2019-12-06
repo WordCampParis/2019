@@ -2,7 +2,7 @@
 
 ## Tâches du rôle
 
-+ Il/elle crée tous les éléments graphiques du WordCamp en veillant à une certaine cohérence vis à vis de l’identité de la ville de Paris :
++ Il/elle crée tous les éléments graphiques du WordCamp en veillant à une certaine cohérence vis à vis de l’identité du WordCamp paris :
 	+ la bannière dont le site central des WordCamps a besoin (qui peut être commune avec celle du site) ;
 	+ le wapuu et le logo du WordCamp ;
 	+ le visuel du T-shirt du WordCamp ;
